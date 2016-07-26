@@ -1,5 +1,3 @@
-def hello_world(input)
-  print "Hello #{input}"
+def hello_world
+  print "Hello World"
 end
-
-#assuming input == "World"
