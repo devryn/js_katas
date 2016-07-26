@@ -7,9 +7,12 @@ def pigatize(text)
 end
 
 def starts_with_vowel?(text)
-  /[aeiou]/ == text[0]
+  /[aeiou]/ === text[0]
 end
 
-pigatize("stop")
-pigatize("go")
-pigatize("apple")
+loop do
+  puts "Please enter a word and I will translate to pig latin"
+  text = gets.chomp
+  break if text.length == 0 # Break out of the loop if I say nothing
+  puts pigatize(text)
+end
