@@ -1,4 +1,8 @@
 def palindrome(input)
-  all_words = input.downcase.gsub(/[,\. ;'’!]/)
-  all_words == all_words.reverse
+  input = input.downcase.gsub(/[,\. ;'’!]/, '')
+  input == input.reverse
 end
+
+puts palindrome("kateetak")
+puts palindrome("KatE! etak.")
+puts palindrome("Not a palindrome.")
